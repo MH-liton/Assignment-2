@@ -1,0 +1,22 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.link-button{
+    text-decoration: none;
+    background-image:linear-gradient(red,tomato);
+    padding: 10px 40px;
+    color: whitesmoke;
+    font-weight: 800;
+    border-radius: 5px;
+}
+.flexible-container{
+    display: flex;
+    margin: 3px;
+}
+.half-width{
+    width: 50%;
+    padding: 50px 90px;
+}
+.half-width img{
+    width: 90%;
+}
