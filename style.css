@@ -1,6 +1,10 @@
 body{
     font-family: 'Noto Sans JP', sans-serif;
 }
+h2{
+    
+    color: whitesmoke;
+}
 .link-button{
     text-decoration: none;
     background-image:linear-gradient(red,tomato);
@@ -19,4 +23,8 @@ body{
 }
 .half-width img{
     width: 90%;
+}
+.top-banner{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
 }
