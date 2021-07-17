@@ -1,9 +1,11 @@
 body{
     font-family: 'Noto Sans JP', sans-serif;
+    text-align: 10px;
 }
 h2{
     
     color: whitesmoke;
+
 }
 .link-button{
     text-decoration: none;
@@ -12,6 +14,7 @@ h2{
     color: whitesmoke;
     font-weight: 800;
     border-radius: 5px;
+    
 }
 .flexible-container{
     display: flex;
@@ -76,4 +79,122 @@ h2{
 .player img {
     width: 300px;
     height: 256px;
+}
+.blue-color{
+    text-decoration: none;
+    background-image: linear-gradient(rgb(118, 0, 253),rgb(14, 13, 13));
+    padding: 12px 42px;
+    color:rgba(255, 255, 255, 0.726);
+    font-weight:700;
+    border-radius: 7px;
+}
+.red-color{
+    color:red;
+}
+.brown-color{
+    color:brown;
+}
+.football{
+    margin-top: 5px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.review{
+    text-align: center;
+}
+
+/* -------------
+media queries
+--------------  */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .half-width {
+        width: 100%;
+
+    }
+    .icon{
+        display: flex;
+        position: relative;
+        left: 300px;
+        
+    }
+    #copyright{
+        position: relative;
+        left: 300px;
+      
+    }
+    .review{
+        position: relative;
+        left: 200px;
+    }
+    .banner{
+        position: relative;
+        left:5px;
+    }
+    .football{
+        position: relative;
+        right:130px;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+    }
+}
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .half-width {
+        width: 100%;
+    }
+
+    .icon{
+        display: flex;
+        position: relative;
+        left: 320px;
+    
+    }
+    #copyright{
+        position: relative;
+        left: 140px;
+    }
+    .review{
+        position: relative;
+        left: 160px;
+    }
+    .banner{
+        position: relative;
+        left:100px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        right:40px;
+    }
+
+    .player {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        right:40px;
+    }
+    .player-info{
+        position: relative;
+        right:40px;
+    }
+
+    .player-detail{
+        position: relative;
+        left:40px;
+    }
+
+    .player-name {
+        position: relative;
+        left:40px;
+    }
+    .football{
+        position: relative;
+        right:10px;
+    }
 }
